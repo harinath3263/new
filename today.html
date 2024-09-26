@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Personal Finance Manager</h1>
+
+    <h2>Balance: <span id="balance">$0</span></h2>
+    
+    <form id="transactionForm">
+        <input type="text" id="description" placeholder="Description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <h1>Transactions</h1>
+
+    <table id="transactionTable">
+        <thead>
+            <tr>
+                <th>Descrition</th>
+                <th>Amount</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button id="Exportcsv">Export to CSV</button>
+    <script src="js.js"></script>
+
+
+</body>
+</html>
